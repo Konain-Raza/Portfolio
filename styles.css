@@ -44,6 +44,7 @@ body {
 #main {
   /* padding: 5vh 0vw; */
   font-family: Gilroy !important;
+  cursor: url('./Assets/Icons/pointer.svg'), auto;
 
   width: 100vw;
   background-color: var(--bg-color);
