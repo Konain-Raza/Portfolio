@@ -76,6 +76,10 @@
 // })
 
 //download cv button
+setTimeout(function() {
+    alert('Welcome to my portfolio! Please note that this site is currently under construction. Stay tuned for updates and exciting new features!');
+}, 1000);
+
 function downloadButton(){
     document.querySelectorAll('.button').forEach(button => {
 
