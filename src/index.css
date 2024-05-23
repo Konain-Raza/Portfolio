@@ -1,0 +1,25 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+width: 100vw;
+  color-scheme: light dark;
+  color: black;
+  background-color: red;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body,html{
+  width: 100vw;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+/* overflow-x: hidden; */
+}

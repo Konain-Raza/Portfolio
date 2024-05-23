@@ -1,0 +1,55 @@
+@font-face {
+    font-family: mona-bold;
+    src: url(../../assets/Fonts/MonaSans/OTF//Mona-Sans-MediumWide.otf);
+}
+#contact{padding: 30px 0px;
+    background-image: url(../../assets/Images/contact-bg-matrix.png);
+    width: 100%;
+    padding: 20vh 0vw;
+    height: max-content;
+    display: flex;
+gap: 2vh;
+align-items:center;
+flex-direction: column;
+color: white;
+
+}
+#contact-btns{
+    text-align: center;
+}#contact-text>h4{
+    margin: 0;
+    padding: 0;
+}
+#contact-text{
+    width: 100%;
+    flex-direction: column;
+    height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#contact-text>h1{
+    /* background-color: yellow; */
+    line-height: 1.5cm;
+    color: white;
+    font-family: mona-bold !important;
+    text-align: center;
+    width: 60%;
+    margin: 0;
+    /* width: max-content; */
+    height: max-content;
+    padding: 0;
+    font-family: mona;
+    font-size: 3rem;
+    padding-bottom: 2vh;
+}
+
+.contact-btn{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #0C0E23;
+
+    border: none;
+    border-radius: 15px;
+}

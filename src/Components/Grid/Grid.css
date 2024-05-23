@@ -1,0 +1,206 @@
+#grid{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;  
+    max-height: max-content;
+    padding: 20px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+
+}
+#grid-1{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    height: 50%;
+}
+#grid1-left{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    border-radius: 10px;
+    background-size: cover; /* Ensures the image covers the entire container */
+
+    width: 50%;
+background-image: url(../../assets/Images/priroritize.png);
+background-repeat: no-repeat;
+
+    padding: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    height: 82%;
+}
+.grid-headings{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.grid-desc{
+margin: 0;
+padding: 0;
+}
+#grid1-right{
+    
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+#time-flex{
+    display: flex;
+    align-items: start;
+    border-radius: 10px;
+    background-image: url(../../assets/Images/time-zone.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures the image covers the entire container */
+    background-position:bottom; /* Centers the image */
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    width: 100%;
+    height: 50%;
+}
+
+#tech-stack{
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+}
+#techstack-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+}
+#tech-stack>#marquee{
+    /* background-color: aqua; */
+    display: flex;
+    padding: 20px 0px;
+justify-content: center;
+align-items: center;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+marquee{
+display: flex;
+padding: 20px 0px;
+
+justify-content: center;
+align-items: center;
+    width: 50%;
+    height: 100%;
+}
+#tech-stack>#marquee>marquee>img{
+    width: 60px;
+    height: 60px;
+}
+
+#grid-2{
+    /* background-color: rebeccapurple; */
+    /* margin: 0 auto; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    justify-content: space-between;
+    height: 50%;
+}
+
+#grid2-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+#tech-enthusiast>img{
+    position: absolute;
+    right: -2%;
+    bottom: -5%;
+}
+#tech-enthusiast{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+background-image: url(../../assets/Images/matrix-bg.png);
+background-size: cover;
+background-repeat: no-repeat;
+    height: 50%;
+}
+#start-project{
+    background-image: url(../../assets/Images/start-project.png);
+    gap: 2vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+
+    height: 40%;
+}
+#grid2-right{
+    position: relative;
+background-image: url(../../assets/Images/matrix-bg.png);
+    display: flex;
+    justify-content: center;
+        flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+
+    width: 60%;
+height: 80%;
+padding: 30px;
+}#grid2-right>h3{
+    width: 40%;
+}
+#grid2-right>img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+width: 60%;
+}
+#copy-btn>i{
+    font-size: 1rem;
+}
+#copy-btn{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #06091F;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    font-size: 0.8rem;
+}

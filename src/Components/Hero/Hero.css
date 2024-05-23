@@ -1,0 +1,70 @@
+@font-face {
+    font-family: mona;
+    src: url(../../assets/Fonts/MonaSans/OTF/Mona-Sans-MediumWide.otf);
+  }
+#hero{
+    font-family: mona;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    color: white;
+    gap: 15px;
+}
+
+#hero>h5{
+    margin: 0;
+    padding: 0;
+text-transform: uppercase;
+}
+#hero>h1{
+    /* word-wrap: break-word; */
+    /* word-break: break-all; */
+    font-weight: bolder;
+    text-align: center;
+    width: 70%;
+    font-size: 3.1rem;
+    margin: 0;
+    padding: 0;
+text-transform: uppercase;
+
+}
+#hero>h3{
+    text-transform: lowercase;
+    text-align: center;
+    width: 60%;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+text-transform: uppercase;
+}
+
+#hero>button{
+    cursor: pointer;
+    border: none;
+    background-color: #0C0E23;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+#hero>button>i{
+    font-size: 1rem;
+}
+
+#spotlight-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#spotlight-2{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
