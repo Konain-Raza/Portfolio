@@ -3,6 +3,7 @@
   src: url(../../assets/Fonts/MonaSans/OTF/Mona-Sans-MediumWide.otf);
 }
 #navbar{
+  z-index: 50;
     font-family: mona;
     width: max-content;
     height: max-content;

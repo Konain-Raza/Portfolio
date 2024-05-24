@@ -4,15 +4,14 @@
   padding: 0;
 }
 body,html{
-  width: 100vw;
+  width: 100%;
   height: max-content;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 #root {
-width: 100%;
-
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
  
@@ -20,9 +19,10 @@ width: 100%;
 }
 
 #main {
+margin: 0 auto;
+
   z-index: 40;
   padding: 20px 0px;
-  margin: 0;
   /* min-height: 100%; */
   width: 100%; /* Adjusted to fit within #root */
   height: max-content; /* This can stay as 100% if you want it to fill #root's height */
