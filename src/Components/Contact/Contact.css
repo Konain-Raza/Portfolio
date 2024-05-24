@@ -2,7 +2,8 @@
     font-family: mona-bold;
     src: url(../../assets/Fonts/MonaSans/OTF//Mona-Sans-MediumWide.otf);
 }
-#contact{padding: 30px 0px;
+#contact{
+    padding: 30px 0px;
     background-image: url(../../assets/Images/contact-bg-matrix.png);
     width: 100%;
     padding: 20vh 0vw;
@@ -17,6 +18,9 @@ color: white;
 #contact-btns{
     text-align: center;
 }#contact-text>h4{
+    font-size: clamp(0.5rem, 0.4rem + 0.8vw, 1rem);
+    text-align: center;
+    width: 90%;
     margin: 0;
     padding: 0;
 }
@@ -30,7 +34,6 @@ color: white;
 }
 #contact-text>h1{
     /* background-color: yellow; */
-    line-height: 1.5cm;
     color: white;
     font-family: mona-bold !important;
     text-align: center;
@@ -40,16 +43,33 @@ color: white;
     height: max-content;
     padding: 0;
     font-family: mona;
-    font-size: 3rem;
+    font-size: clamp(1rem, 0.6rem + 3.2vw, 3rem);
     padding-bottom: 2vh;
 }
 
 .contact-btn{
     font-weight: bold;
-    font-size: 1rem;
-    padding: 20px;
+    font-size: clamp(0.5rem, 0.4rem + 0.8vw, 1rem);
+    padding: clamp(0.625rem, 0.5rem + 1vw, 1.25rem);
+
+
     background-color: #0C0E23;
 
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
 }
+
+@media only screen and (min-width: 100px) {
+    #contact-text>h1{
+     
+        width: 80%;
+       
+    }
+      }
+      @media only screen and (min-width: 768px) {
+        #contact-text>h1{
+     
+            width: 60%;
+           
+        }
+          }

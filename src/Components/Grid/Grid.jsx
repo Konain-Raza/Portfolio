@@ -19,7 +19,7 @@ const Grid = () => {
           </div>
           <div id="tech-stack">
             <div id="techstack-content">
-            <p className="grid-desc">I constantly try to improve</p>
+            <p className="grid-desc grid-headings" >I constantly try to improve</p>
             <h3 className="grid-headings">My tech stack</h3>
             </div>
             <div id="marquee">
@@ -42,7 +42,7 @@ const Grid = () => {
             <h3 className="grid-headings">
               Do you want to start a project together?
             </h3>
-            <button id="copy-btn"> <i class="ri-file-copy-line"></i>Copy my Email Address</button>
+            <button id="copy-btn"> <i className="ri-file-copy-line"></i>Copy my Email Address</button>
           </div>
         </div>
         <div id="grid2-right">

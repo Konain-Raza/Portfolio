@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Projects.css";
-
+import SyncedImg from "../../assets/Images/Synced.png"
 function Projects() {
   const [hoveredProject, setHoveredProject] = useState(null);
 
@@ -50,7 +50,7 @@ function Projects() {
           onMouseLeave={handleMouseLeave}
         >
           <div className="project-container">
-            {/* Project 3 content */}
+      <img src={SyncedImg} alt="" />
           </div>
         </div>
         <div

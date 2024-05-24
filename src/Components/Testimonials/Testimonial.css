@@ -1,8 +1,12 @@
 #allcomments {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
     margin-top: 5vh;
     width: 100%;
-    height: 70vh;
+    height: max-content;
     display: flex;
+    gap: 4vh;
     color: white;
     align-items: center;
     justify-content: center;
@@ -20,10 +24,10 @@
   }
   
   .testimonial-card {
-    padding: 5px;
+    padding: 10px 0px;
     border-radius: 15px;
     overflow: hidden;
-    width: 30rem;
+    width: clamp(10rem, -15rem + 80vw, 30rem);
     height: max-content;
     max-height: 90%;
     background: rgba( 255, 255, 255, 0.1 );
@@ -43,31 +47,37 @@
     word-wrap: break-word;
     word-break: break-all;
     width: 90%;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
     margin: 0;
     padding: 20px;
     padding-bottom: 0;
     height: max-content;
     color: white;
   }
+  .main-headings{
+    text-align: center;
+    font-size: clamp(1rem, 0.5rem + 1.6vw, 1.4rem);
+    }
   
   #testimonial-ref {
-    /* background-color: pink; */
-    padding: 10px;
-    width: 100%;
+    padding-top: clamp(0.625rem, -0.1563rem + 2.5vw, 1.25rem);
+    padding-bottom: clamp(0.625rem, -0.1563rem + 2.5vw, 1.25rem);
+
+    width: 83%;
     height: max-content;
+    justify-content: flex-start;
     display: flex;
     gap: 5px;
     align-items: center;
   }
   #testimonial-ref >img{
-    margin-left: 1.4vw;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
   }
   #testimonial-ref > h1 {
     /* Styles for the name */
+    font-size: clamp(1rem, 0.625rem + 1.2vw, 1.3rem);
     margin: 0;
     padding-top: 0;
     /* padding: 10px; */
@@ -81,4 +91,33 @@
       transform: translateX(-100%);
     }
   }
-  
+
+  @media only screen and (min-width: 100px) {
+    .testimonial-card > h3 {
+      word-wrap: break-word;
+      word-break: break-all;
+      width: 100%;
+      /* font-size: 0.5rem; */
+      margin: 0;
+      padding: clamp(0.75rem, 0.125rem + 2vw, 1.25rem);
+
+
+
+      padding-bottom: 0;
+      height: max-content;
+      color: white;
+    }
+  }
+
+  @media only screen and (min-width: 786px) {
+    .testimonial-card > h3 {
+      word-wrap: break-word;
+      word-break: break-all;
+      width: 90%;
+      margin: 0;
+      padding: 20px;
+      padding-bottom: 0;
+      height: max-content;
+      color: white;
+    }
+  }

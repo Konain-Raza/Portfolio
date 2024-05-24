@@ -15,6 +15,8 @@
 }
 
 #hero>h5{
+    text-align: center;
+    font-size: clamp(0.3rem, 0.2rem + 0.8vw, 0.8rem);
     margin: 0;
     padding: 0;
 text-transform: uppercase;
@@ -25,7 +27,7 @@ text-transform: uppercase;
     font-weight: bolder;
     text-align: center;
     width: 70%;
-    font-size: 3.1rem;
+    font-size: clamp(1rem, 0.58rem + 3.36vw, 3.1rem);
     margin: 0;
     padding: 0;
 text-transform: uppercase;
@@ -34,8 +36,8 @@ text-transform: uppercase;
 #hero>h3{
     text-transform: lowercase;
     text-align: center;
-    width: 60%;
-    font-size: 0.9rem;
+    width: 90%;
+    font-size: clamp(0.5rem, 0.42rem + 0.64vw, 0.9rem);
     margin: 0;
     padding: 0;
 text-transform: uppercase;
@@ -45,26 +47,96 @@ text-transform: uppercase;
     cursor: pointer;
     border: none;
     background-color: #0C0E23;
-    padding: 20px;
+    padding: clamp(0.625rem, 0.5rem + 1vw, 1.25rem);
+    font-size: clamp(0.6rem, 0.4rem + 0.8vw, 1rem);
+
     border-radius: 10px;
     display: flex;
     gap: 5px;
     align-items: center;
     justify-content: space-between;
+    
+}
+
+
+@keyframes borderRotate {
+100% {
+    --angle: 420deg;
+}
+}
+
+@keyframes borderRadial {
+20% {
+    --gradX: 100%;
+    --gradY: 50%;
+}
+40% {
+    --gradX: 100%;
+    --gradY: 100%;
+}
+60% {
+    --gradX: 50%;
+    --gradY: 100%;
+}
+80% {
+    --gradX: 0%;
+    --gradY: 50%;
+}
+100% {
+    --gradX: 50%;
+    --gradY: 0%;
+}
 }
 #hero>button>i{
     font-size: 1rem;
 }
 
 #spotlight-1{
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
 }
 #spotlight-2{
+    display: none;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     position: absolute;
     top: 0;
     right: 0;
 }
+@media only screen and (min-width: 100px) {
+#hero{
+    height: 70vh;
+
+
+}
+#hero>h1{
+width: 90%;
+
+
+}
+#hero>h3{
+       
+    width: 80%;
+    
+}
+
+  }
+  @media only screen and (min-width: 768px) {
+    #hero{
+        height: 85vh;
+    
+    
+    }
+
+    #hero>h1{
+        width: 60%;
+        
+        }
+        #hero>h3{
+       
+            width: 60%;
+            
+        }
+      }

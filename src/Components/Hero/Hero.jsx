@@ -14,7 +14,7 @@ const Hero = () => {
         Pakistan, where pixels dance to the rhythm of my code.
       </h3>
       <button>
-        See my work <i class="ri-arrow-right-up-line"></i>
+        See my work <i className="ri-arrow-right-up-line"></i>
       </button>
     </div>
   );

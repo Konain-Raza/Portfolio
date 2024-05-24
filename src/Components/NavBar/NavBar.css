@@ -1,13 +1,17 @@
 @font-face {
-    font-family: gilroy;
-    src: url(../../assets/Fonts/Gilroy-Medium.ttf);
-  }
+  font-family: mona;
+  src: url(../../assets/Fonts/MonaSans/OTF/Mona-Sans-MediumWide.otf);
+}
 #navbar{
-    font-family: gilroy;
+    font-family: mona;
     width: max-content;
     height: max-content;
  margin: 0 auto;
- padding: 20px 35px;
+padding-top: clamp(0.7375rem, -0.9688rem + 4.5vw, 1.5625rem);
+padding-bottom: clamp(0.7375rem, -0.9688rem + 4.5vw, 1.5625rem);
+padding-left: clamp(0.7375rem, -1.75rem + 7vw, 2.1875rem);
+padding-right: clamp(0.7375rem, -1.75rem + 7vw, 2.1875rem);
+
  border-radius: 10px;
  display: flex;
  justify-content: space-around;
@@ -17,11 +21,33 @@ background:
  -webkit-backdrop-filter: blur( 1.5px );
  border: 1px solid rgba(255, 255, 255, 0.062);
  align-items: center;
-gap: 30px;
+gap: 2vw;
 }
 
 #navbar>a{
-    font-size: 1rem;
+  font-size:clamp(0.6rem, -0.2125rem + 2.6vw, 1.25rem);
     color: white;
 text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 100px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #navbar{
+
+    padding: 20px 35px;
+   
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

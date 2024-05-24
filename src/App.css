@@ -1,27 +1,33 @@
-#root {
-  width: 100%;
-  display: flex;
-  height: max-content;
-  /* max-height: max-content; */
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
+}
+body,html{
+  width: 100vw;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+#root {
+width: 100%;
+
+  margin: 0;
+  padding: 0;
+ 
 
 }
 
 #main {
   z-index: 40;
-  position: relative;
   padding: 20px 0px;
   margin: 0;
   /* min-height: 100%; */
   width: 100%; /* Adjusted to fit within #root */
-  min-height: 100vh;
   height: max-content; /* This can stay as 100% if you want it to fill #root's height */
   background-color: #000319;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   
 }

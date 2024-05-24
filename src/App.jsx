@@ -7,6 +7,7 @@ import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Testimonial from "./Components/Testimonials/Testimonials";
 function App() {
+  
   return (
     <div id="main">
       
