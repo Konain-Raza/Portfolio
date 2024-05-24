@@ -99,6 +99,9 @@ text-transform: uppercase;
     top: 0;
     left: 0;
 }
+a{
+  text-decoration: none;
+}
 #spotlight-2{
     opacity: 1;
     z-index: 10;
@@ -112,7 +115,7 @@ text-transform: uppercase;
 }
 @media only screen and (min-width: 100px) {
 #hero{
-    height: 70vh;
+    height: 55vh;
 
 
 }

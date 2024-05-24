@@ -96,12 +96,12 @@ font-size: clamp(0.5rem, 0.3rem + 1.6vw, 1.5rem);
 margin-left: -10px;
 width: 100%;
 /* background-color: aqua; */
-font-size: clamp(0.3rem, 0.2364rem + 1.0182vw, 1rem);
+font-size: clamp(0.4rem, -0.35rem + 2.4vw, 1rem);
 }
 #techstack-content>h3{
 margin-left: -10px;
-width: 90%;
-font-size: clamp(0.4rem, 0.2909rem + 1.9455vw, 1.8rem);
+width: 100%;
+font-size: clamp(1rem, 0rem + 3.2vw, 1.8rem);
 
 /* font-size: clamp(0.4rem, 0.2909rem + 1.7455vw, 1.6rem); */
     }

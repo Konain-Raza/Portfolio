@@ -10,24 +10,28 @@ import html from "../../assets/Images/html.png";
 import css from "../../assets/Images/css.png";
 
 const Grid = () => {
+  const copyToClipboard = () => {
+    const text = "konainraza105@gmail.com";
+    navigator.clipboard.writeText(text);
+  }
   return (
     <div id="grid">
       <div id="grid-1">
         <div id="grid1-left">
           <h3 className="grid-headings">
-            I prioritize client collaboration, fostering open communication{" "}
+          Success blooms in the garden of client collaboration, nurtured by transparent conversation.
           </h3>
         </div>
         <div id="grid1-right">
           <div id="time-flex">
             <h3 className="grid-headings">
-              I’m very flexible with time zone communications
+            Across time's canvas, I paint conversations with ease.
             </h3>
           </div>
           <div id="tech-stack">
             <div id="techstack-content">
-              <p>I constantly try to improve</p>
-              <h3>My tech stack</h3>
+              <p>Ever evolving, perpetually refining.</p>
+              <h3>My Tech Stack</h3>
             </div>
             <div id="mar">
               <div id="marquee-up">
@@ -53,14 +57,14 @@ const Grid = () => {
       <div id="grid-2">
         <div id="grid2-left">
           <div id="tech-enthusiast">
-            <h3>Tech enthusiast with a passion for development.</h3>
+            <h3>Passionate developer, wielding a love for tech.</h3>
             <img src={techimg} alt="" />
           </div>
           <div id="start-project">
             <h3 className="grid-headings">
-              Do you want to start a project together?
+            Ready to team up for a project?
             </h3>
-            <button id="copy-btn">
+            <button id="copy-btn" onClick={copyToClipboard}>
               {" "}
               <i className="ri-file-copy-line"></i>Copy my Email Address
             </button>
@@ -69,7 +73,7 @@ const Grid = () => {
         <div id="grid2-right">
           <img src={codeimg} alt="" />
           <p>The Inside Scoop</p>
-          <h3>Currently building a JS Animation library</h3>
+          <h3>Currently building a bulk certificate maker</h3>
         </div>
       </div>
     </div>

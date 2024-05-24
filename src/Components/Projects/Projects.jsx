@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./Projects.css";
-import SyncedImg from "../../assets/Images/Synced.png"
+import SyncedImg from "../../assets/Images/Synced.png";
+import tackleitimg from "../../assets/Images/tackleit.png";
+import sundownimg from "../../assets/Images/Sundown.png";
+import rankedvoteimg from "../../assets/Images/Ranked-Vote.png";
+import quoteimg from "../../assets/Images/quotequirk.png";
+
 function Projects() {
   const [hoveredProject, setHoveredProject] = useState(null);
 
@@ -14,77 +19,77 @@ function Projects() {
 
   return (
     <div id="projects">
-      <h1>Recent projects </h1>
+      <h1 className="main-headings">Fresh Endeavors: Recent Ventures</h1>
 
       <div className="projects-row">
-        <h1 className={hoveredProject === 1 || hoveredProject === 2 ? "block-display" : "none-display"}>
-          {hoveredProject === 1 ? "Mart Management" : hoveredProject === 2 ? "ATM" : "Synce"}
-        </h1>
-        <div
-          className="project-wrapper"
-          onMouseEnter={() => handleMouseEnter(1)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="project-container">
-            {/* Project 1 content */}
-          </div>
+        <div className="project-wrapper">
+          <h1>Synced</h1>
+          <a href="https://lets-synced.vercel.app/" target="_blank">
+            <div className="project-container">
+              <img src={SyncedImg} alt="" />
+            </div>
+          </a>
         </div>
-        <div
-          className="project-wrapper"
-          onMouseEnter={() => handleMouseEnter(2)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="project-container">
-            {/* Project 2 content */}
-          </div>
+        <div className="project-wrapper">
+        <h1>Tackleit</h1>
+
+          <a href="https://tackleit.netlify.app/" target="_blank">
+            <div className="project-container">
+              <img src={tackleitimg} alt="" />
+            </div>
+          </a>
         </div>
       </div>
 
       <div className="projects-row">
-        <h1 className={hoveredProject === 3 || hoveredProject === 4 ? "block-display" : "none-display"}>
-          {hoveredProject === 3 ? "ATM" : "Synce"}
-        </h1>
         <div
           className="project-wrapper"
-          onMouseEnter={() => handleMouseEnter(3)}
-          onMouseLeave={handleMouseLeave}
+       
         >
-          <div className="project-container">
-      <img src={SyncedImg} alt="" />
-          </div>
+          <h1>Sundown Studio</h1>
+
+          <a href="https://sundown-studioo.vercel.app/" target="_blank">
+            <div className="project-container">
+              <img src={sundownimg} alt="" target="blank" />
+            </div>
+          </a>
         </div>
         <div
           className="project-wrapper"
-          onMouseEnter={() => handleMouseEnter(4)}
-          onMouseLeave={handleMouseLeave}
+    
         >
-          <div className="project-container">
-            {/* Project 4 content */}
-          </div>
+          <h1>Ranked Vote</h1>
+
+          <a href="https://ranked-vote.netlify.app/" target="_blank">
+            <div className="project-container">
+              <img src={rankedvoteimg} alt="Ranked Vote Image" />
+            </div>
+          </a>
         </div>
       </div>
 
       <div className="projects-row">
-        <h1 className={hoveredProject === 5 || hoveredProject === 6 ? "block-display" : "none-display"}>
-          {hoveredProject === 5 ? "Project 5 Name" : "Synce"}
-        </h1>
         <div
           className="project-wrapper"
-          onMouseEnter={() => handleMouseEnter(5)}
-          onMouseLeave={handleMouseLeave}
+       
         >
-          <div className="project-container">
-            {/* Project 5 content */}
-          </div>
+          <h1>Quote Quirk</h1>
+
+          <a href="https://quote-quirk.vercel.app/" target="blank">
+            <div className="project-container">
+              <img src={quoteimg} alt="" />
+            </div>
+          </a>
         </div>
         <div
           className="project-wrapper"
-          onMouseEnter={() => handleMouseEnter(6)}
-          onMouseLeave={handleMouseLeave}
+          
         >
-          <div className="project-container">
-            {/* Project 6 content */}
-          </div>
+          <h1>Mart Management System</h1>
+
+          <a href="/link-to-project6" target="blank">
+            <div className="project-container">{/* Project 6 content */}</div>
+          </a>
         </div>
       </div>
     </div>

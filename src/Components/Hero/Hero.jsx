@@ -47,7 +47,7 @@ const Hero = () => {
               strokeLinejoin="round"
             ></path>
           </svg>
-          <span className="text">See my work</span>
+          <span className="text"><a href="#projects">See my work</a></span>
         </button>
         <div className="bodydrop"></div>
         <span aria-hidden="true" className="particle-pen">

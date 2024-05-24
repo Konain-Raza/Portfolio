@@ -3,7 +3,7 @@ import "./Testimonial.css";
 function Testimonials() {
   return (
     <div id="allcomments">
-      <h1 className="main-headings">Kind words from satisfied clients</h1>
+      <h1 className="main-headings">Echoes of Delight: Testimonials</h1>
      <div id="marquee">
         <div className="testimonial-card">
           <h3>
