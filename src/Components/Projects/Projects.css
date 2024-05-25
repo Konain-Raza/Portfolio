@@ -12,9 +12,9 @@
     flex-direction: column;
     gap: 2vh;
     height: max-content;
-    /* background-color: white; */
 }
 .project-wrapper>h1{
+  display: none;
   opacity: 0;
   color: white;
     z-index: 100;
@@ -28,6 +28,7 @@ bottom: 50;
 
 
 .main-headings {
+  margin: 0 auto;
   width: 90%;
   font-size: clamp(1rem, 0.7rem + 2.4vw, 2.5rem) !important;
 padding-top: clamp(2rem, -4.25rem + 20vw, 7rem);
@@ -76,16 +77,18 @@ padding-bottom:clamp(1rem, -4rem + 16vw, 5rem);
     height: 100%;
 }
 .project-wrapper:hover>h1 {
-  background-color: red;
+  margin: 0 auto;
+justify-content: center;
+  display: flex;
   font-family: monabold;
-  margin: 0;
+  margin: auto;
   padding: 0;
   width: 80%;
   text-align: center;
   font-weight: bolder;
   color: greenyellow;
   animation: reveal 0.5s cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
-  font-size: clamp(1rem, 0.4rem + 4.8vw, 4rem);
+  font-size: clamp(0.3rem, -0.0364rem + 5.3818vw, 4rem);
 
 
   opacity: 1;
@@ -110,6 +113,9 @@ padding-bottom:clamp(1rem, -4rem + 16vw, 5rem);
   border-radius: 15px;
   width: 100%;
   object-fit:cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 90%;
 
 }

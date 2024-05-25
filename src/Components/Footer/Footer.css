@@ -1,0 +1,134 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: clamp(1vh, 2vh + 1vw, 3vh) clamp(1vw, 1vw + 2vh, 3vw);
+    font-family: monabold;
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+    max-width: 1200px;  
+    width: 100%;
+    margin: 0 auto;
+  }
+  .icon-svg{
+    color: white;
+  }
+  @media (max-width: 400px) {
+    .footer {
+      flex-direction: column;
+    }
+  }
+  
+.footer-left{
+    height: 100%;
+}
+.footer-left p {
+    margin: 0;
+    font-size: clamp(0.5rem, 0.4rem + 0.8vw, 1rem);
+}
+.footer-right{
+    width: max-content;
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+.social-icons {
+    display: flex; /* Flex for better responsiveness */
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: 0;
+    padding: 0;
+}
+.main-icon{
+    margin: auto;
+}
+.social-icons .icon {
+margin: auto;
+    position: relative;
+    border-radius: 10px;
+    margin: 0px;
+    width: clamp(30px, 5vw, 50px); /* Responsive width */
+    height: clamp(30px, 5vw, 50px); /* Responsive height */
+    font-size: clamp(0.8rem, 0.66rem + 1.12vw, 1.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-icons .tooltip {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(10px, 1.5vw, 14px); /* Responsive font size */
+    background: #fff;
+    color: #333;
+    padding: clamp(3px, 0.5vw, 5px) clamp(5px, 1vw, 8px); /* Responsive padding */
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-icons .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-icons .icon:hover .tooltip {
+    transition: all ease-out 0.3s;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.social-icons .facebook:hover,
+.social-icons .facebook:hover .tooltip,
+.social-icons .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+}
+
+.social-icons .github:hover,
+.social-icons .github:hover .tooltip,
+.social-icons .github:hover .tooltip::before {
+    background: #24292e;
+    color: #fff;
+}
+
+.social-icons .instagram:hover,
+.social-icons .instagram:hover .tooltip,
+.social-icons .instagram:hover .tooltip::before {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fd1d1d, #fcb045);
+    color: #fff;
+}
+
+.social-icons .linkedin:hover,
+.social-icons .linkedin:hover .tooltip,
+.social-icons .linkedin:hover .tooltip::before {
+    background: #0077b5;
+    color: #fff;
+}
+
+.social-icons .gmail:hover,
+.social-icons .gmail:hover .tooltip,
+.social-icons .gmail:hover .tooltip::before {
+    background: #ea4335;
+    color: #fff;
+}
+

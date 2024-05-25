@@ -2,12 +2,26 @@ import React from "react";
 import techimg from "../../assets/Images/tech-enthusiast.png";
 import codeimg from "../../assets/Images/code.png";
 import "./Grid.css";
-import js from "../../assets/Images/js.gif";
+import js from "../../assets/Images/javascript.png";
 import cplus from "../../assets/Images/c++.png";
 import dart from "../../assets/Images/dart.png";
 import react from "../../assets/Images/react.png";
 import html from "../../assets/Images/html.png";
 import css from "../../assets/Images/css.png";
+// import python from "../../assets/Images/python.png";
+import net from "../../assets/Images/net.png"
+import flutter from "../../assets/Images/flutter.png"
+import git from "../../assets/Images/git.png"
+import github from "../../assets/Images/github.png"
+import bootstrap from "../../assets/Images/bootstrap.png"
+import tailwind from "../../assets/Images/tailwind.png"
+import firebaselogo from "../../assets/Images/firebase.png"
+
+import sqlimg from "../../assets/Images/sql-server.png"
+
+
+
+
 
 const Grid = () => {
   const copyToClipboard = () => {
@@ -35,12 +49,16 @@ const Grid = () => {
             </div>
             <div id="mar">
               <div id="marquee-up">
-                <img src={js} alt="" />
-                <img src={cplus} alt="" />
-                <img src={dart} alt="" />
-                <img src={react} alt="" />
-                <img src={html} alt="" />
-                <img src={css} alt="" />
+                <img src={sqlimg} alt="" />
+                <img src={flutter} alt="" />
+                <img src={tailwind} alt="" />
+                <img src={bootstrap} alt="" />
+                <img src={net} alt="" />
+                <img src={github} alt="" />
+                <img src={git} alt="" />
+                <img src={bootstrap} alt="" />
+                <img src={bootstrap} alt="" />
+
               </div>
               <div id="marquee-down">
                 <img src={js} alt="" />

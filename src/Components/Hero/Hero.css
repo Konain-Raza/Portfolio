@@ -3,8 +3,9 @@
     src: url(../../assets/Fonts/MonaSans/OTF/Mona-Sans-MediumWide.otf);
   }
 #hero{
-    z-index: 50;
-
+    z-index: 10;
+    background-image: url(../../assets/Images/contact-bg-matrix.png);
+background-size: contain;
     font-family: mona;
     display: flex;
     flex-direction: column;
@@ -75,14 +76,6 @@ text-transform: uppercase;
     border-radius: 15px;
 }
 
-@keyframes borderAnimation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 
 
