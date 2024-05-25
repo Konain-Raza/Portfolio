@@ -29,8 +29,12 @@ gap: 2vw;
   font-size: clamp(0.6rem, 0.52rem + 0.64vw, 1rem);
     color: white;
 text-decoration: none;
-transition: all .3s ease-in-out;
 }
+#navbar > a:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
 
 @media only screen and (max-width: 600px) {}
 

@@ -4,6 +4,7 @@ import SyncedImg from "../../assets/Images/Synced.png";
 import tackleitimg from "../../assets/Images/tackleit.png";
 import sundownimg from "../../assets/Images/Sundown.png";
 import rankedvoteimg from "../../assets/Images/Ranked-Vote.png";
+import martimg from "../../assets/Images/mart.png";
 import quoteimg from "../../assets/Images/quotequirk.png";
 
 function Projects() {
@@ -31,7 +32,7 @@ function Projects() {
           </a>
         </div>
         <div className="project-wrapper">
-        <h1>Tackleit</h1>
+          <h1>Tackleit</h1>
 
           <a href="https://tackleit.netlify.app/" target="_blank">
             <div className="project-container">
@@ -42,10 +43,7 @@ function Projects() {
       </div>
 
       <div className="projects-row">
-        <div
-          className="project-wrapper"
-       
-        >
+        <div className="project-wrapper">
           <h1>Sundown Studio</h1>
 
           <a href="https://sundown-studioo.vercel.app/" target="_blank">
@@ -54,10 +52,7 @@ function Projects() {
             </div>
           </a>
         </div>
-        <div
-          className="project-wrapper"
-    
-        >
+        <div className="project-wrapper">
           <h1>Ranked Vote</h1>
 
           <a href="https://ranked-vote.netlify.app/" target="_blank">
@@ -69,10 +64,7 @@ function Projects() {
       </div>
 
       <div className="projects-row">
-        <div
-          className="project-wrapper"
-       
-        >
+        <div className="project-wrapper">
           <h1>Quote Quirk</h1>
 
           <a href="https://quote-quirk.vercel.app/" target="blank">
@@ -81,14 +73,13 @@ function Projects() {
             </div>
           </a>
         </div>
-        <div
-          className="project-wrapper"
-          
-        >
+        <div className="project-wrapper">
           <h1>Mart Management System</h1>
 
-          <a href="/link-to-project6" target="blank">
-            <div className="project-container">{/* Project 6 content */}</div>
+          <a href="https://drive.google.com/file/d/1mcZstnCnnYrsLOXaZ_f_x-Nhl3Gjadl6/view?usp=sharing" target="blank">
+            <div className="project-container">
+              <img src={martimg} alt="" />
+            </div>
           </a>
         </div>
       </div>

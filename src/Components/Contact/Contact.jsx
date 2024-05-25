@@ -49,9 +49,12 @@ const Contact = () => {
         </h4>
       </div>
       <div id="contact-btns">
-        <div className="contact-btn">
-          Ignite the Connection<i className="ri-arrow-right-up-line"></i>
-        </div>
+   
+        <button className="contact-btn">
+          <span className='text'>Ignite the Connection</span><i className="ri-arrow-right-up-line"></i>
+        <span class="shimmer"></span>
+
+        </button>
       </div>
       <form id="contact-form" onSubmit={sendEmail} ref={form}>
         <div id="contact-part1">
@@ -95,7 +98,7 @@ const Contact = () => {
           onChange={handleInputChange}
           required
         ></textarea>
-        <button type="submit" onClick={sendEmail} value="Send">Send</button>
+        <button type="submit" onClick={sendEmail} value="Send" id='email-send'>Send</button>
       </form>
     </div>
   );
