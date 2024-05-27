@@ -1,39 +1,30 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import "./Contact.css"
+import React, { useRef, useState } from "react";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
+import "./Contact.css";
 
 const Contact = () => {
-  const form = useRef();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
   const sendEmail = (e) => {
     e.preventDefault();
-
+    const serviceId = "service_sfsfl6s";
+    const templateId = "template_s6wyyp9";
+    const publicId = "653vSQw-IllGaimre";
+    const data = new FormData(e.target);
+    const emailFormat = {
+      name: data.get("name"),
+      email: data.get("email"),
+      message: data.get("message"),
+    };
     emailjs
-      .sendForm('service_sfsfl6s', 'template_s6wyyp9', form.current, {
-        publicKey: '653vSQw-IllGaimre',
+      .send(serviceId, templateId, emailFormat, publicId)
+      .then(() => {
+        toast.success("Email successfully sent!");
       })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+      .catch((error) => {
+        toast.error(`Oh no! There was an error. ${error}`);
+      });
   };
 
   return (
@@ -49,14 +40,13 @@ const Contact = () => {
         </h4>
       </div>
       <div id="contact-btns">
-   
         <button className="contact-btn">
-          <span className='text'>Ignite the Connection</span><i className="ri-arrow-right-up-line"></i>
-        <span class="shimmer"></span>
-
+          <span className="text">Ignite the Connection</span>
+          <i className="ri-arrow-right-up-line"></i>
+          <span className="shimmer"></span>
         </button>
       </div>
-      <form id="contact-form" onSubmit={sendEmail} ref={form}>
+      <form id="contact-form" onSubmit={sendEmail}>
         <div id="contact-part1">
           <div className="label">
             <input
@@ -64,8 +54,6 @@ const Contact = () => {
               id="name"
               name="name"
               placeholder="Name"
-              value={formData.name}
-              onChange={handleInputChange}
               required
             />
           </div>
@@ -75,8 +63,6 @@ const Contact = () => {
               id="email"
               name="email"
               placeholder="Email"
-              value={formData.email}
-              onChange={handleInputChange}
               required
             />
           </div>
@@ -86,22 +72,33 @@ const Contact = () => {
           id="subject"
           name="subject"
           placeholder="Subject"
-          value={formData.subject}
-          onChange={handleInputChange}
           required
         />
         <textarea
           id="message"
           name="message"
           placeholder="Message"
-          value={formData.message}
-          onChange={handleInputChange}
           required
         ></textarea>
-        <button type="submit" onClick={sendEmail} value="Send" id='email-send'>Send</button>
+        <button type="submit" id="email-send">
+          Send
+        </button>
       </form>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition:Bounce
+      />
     </div>
   );
-}
+};
 
 export default Contact;
